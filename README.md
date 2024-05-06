@@ -7,22 +7,21 @@ The todo list application that is used is the sample link provided by Cypress : 
 1. In order to be able to run the tests you should have:
    Node preinstalled in your local machine. If not, go ahead and install it on: https://nodejs.org/en/download
 
-2. Next, go ahead and create a new project folder navigate to the project directory cd /your/project/path
+2. Next, go ahead and clone the project from the repo: https://github.com/FionaMeh/cypresstodo-tests.git using:
 
-3. Initiate the project 
-npm init -y
+   git clone https://github.com/FionaMeh/cypresstodo-tests.git
 
-4. Navigate to your procject directory Install Cypress via npm:
+3. Navigate to the project directory
 
-cd /your/project/path
+4. Install the dependencies using command:
 
-npm install cypress --save-dev
+   npm install
 
 #RUNNING THE TESTS
 
-1. After the dependencies are installed, you should be able to successfully open Cypress:
+1. After the dependencies are installed, you should be able to successfully open Cypress using command:
 
-npx cypress open
+   npx cypress open
 
 2. Now, the Cypress test runner should be opened. From there, you can be able to see the Cypress tests and run them.
 Tests can be found on the cypress/e2e folder.
