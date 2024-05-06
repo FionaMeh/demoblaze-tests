@@ -2,7 +2,7 @@ This repo contains the tests written in Cypress for a basic todo list web applic
 
 The todo list application that is used is the sample link provided by Cypress : https://example.cypress.io/todo
 
-#Instructions for the project setup
+# Instructions for the project setup
 
 1. In order to be able to run the tests you should have:
    Node preinstalled in your local machine. If not, go ahead and install it on: https://nodejs.org/en/download
@@ -17,7 +17,7 @@ The todo list application that is used is the sample link provided by Cypress : 
 
    npm install
 
-#RUNNING THE TESTS
+# Running the tests
 
 1. After the dependencies are installed, you should be able to successfully open Cypress using command:
 
