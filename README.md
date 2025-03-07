@@ -6,9 +6,9 @@ The todo list application that is used is the sample link provided by Demoblaze 
 1. In order to be able to run the tests you should have:
    Node preinstalled in your local machine. If not, go ahead and install it on: https://nodejs.org/en/download
 
-2. Next, go ahead and clone the project from the repo: https://github.com/FionaMeh/demoblaze-tests.git using:
+2. Next, go ahead and clone the project from the repo: https://github.com/FionaMeh/demoblaze-cypress-tests.git using:
 
-   git clone https://github.com/FionaMeh/demoblaze-tests.git
+   git clone https://github.com/FionaMeh/demoblaze-cypress-tests.git
 
 3. Navigate to the project directory
 
