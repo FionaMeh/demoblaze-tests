@@ -32,4 +32,4 @@ Test Coverage:
    4. deleteItem.spec.cy.js: Test for deleting an item from the Cart
    5. placeOrder.spec.ct.js: Test for placing an Order
 
-3. After test running you should be able to see clear test results in the Cypress test runner.
+After test running you should be able to see clear test results in the Cypress test runner.
