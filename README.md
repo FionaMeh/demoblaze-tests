@@ -26,10 +26,10 @@ The todo list application that is used is the sample link provided by Demoblaze 
 Tests can be found on the cypress/e2e folder.
 
 Test Coverage:
-loginTest.spec.cy.js: Positive and negative test cases for the Login form
-logoutTest.spec.cy.js: Logout test case
-addItem.spec.cy.js; Test for adding an item to the Cart
-deleteItem.spec.cy.js: Test for deleting an item from the Cart
-placeOrder.spec.ct.js: Test for placing an Order
+1. loginTest.spec.cy.js: Positive and negative test cases for the Login form
+2. logoutTest.spec.cy.js: Logout test case
+3. addItem.spec.cy.js; Test for adding an item to the Cart
+4. deleteItem.spec.cy.js: Test for deleting an item from the Cart
+5. placeOrder.spec.ct.js: Test for placing an Order
 
-3. After test running you should be able to see clear test results in the Cypress test runner.
+6. After test running you should be able to see clear test results in the Cypress test runner.
