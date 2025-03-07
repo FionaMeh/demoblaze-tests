@@ -1,29 +1,39 @@
-describe('Deleting a completed item from the todo list', () => {
-  // using the same beforeEach function for visiting the page
-  beforeEach(() => {
-    cy.visit('https://example.cypress.io/todo');
-  });
+describe('Delete item from  Cart test', () => {
+    
+    it('logins into the website', () => {
+        cy.visit('https://www.demoblaze.com/');
+        cy.get('#login2').click(); // Click on Sign In button
+        cy.wait(1000); // Wait for modal to appear
+        
+        cy.get('#loginusername').type('FionaMehmeti'); // Enter username
+        cy.get('#loginpassword').type('Finkipinki'); // Enter password
+        cy.get("button[onclick='logIn()']").click(); // Click Login button
+        
+        cy.get('#nameofuser').should('contain', 'Welcome FionaMehmeti'); // Verify user is logged in
+        cy.wait(3000);
+     });
 
-  it('successfully deletes the completed todo item', () => {
-    // adding the new item list
-    cy.get('.new-todo').type('Complete the Borek Assignment{enter}');
-    cy.wait(1000)
-
-    // Since the button for deleting an item appears only when an item is marked as completed, 
-    // we will be using the commands as before for marking the item as completed
-    cy.contains('Complete the Borek Assignment')
-      .parent()
-      .find('input[type="checkbox"]')
-      .check();
-    // we will be adding a 2 second pause to see better test results
-    cy.wait(2000)
-
-    // now since the button for deleting the item appeared, we can click it for deleting the completed task
-    cy.contains('Clear completed').click()
-    cy.wait(1000)
-
-    // finally we can make sure our element does not exist anymore in the todo list
-    cy.get('.view')
-      .should('not.have.text', 'Complete the Borek Assignment')
-  });
+    it('should add an item to the cart and verify it', () => {
+        cy.get('.card-title .hrefch').first().click(); // Click on the first product using its class
+        cy.wait(3000);
+        cy.get('.btn-success').contains('Add to cart').click(); // Click on Add to Cart button
+        
+        cy.wait(3000);
+        cy.on('window:alert', (text) => {
+            expect(text).to.contains('Product added'); // Verify success alert
+        });
+        cy.wait(2000);
+        
+    });
+    
+    it('should delete the first item from the cart', () => {
+        cy.get('#cartur').click(); // Navigate to Cart page
+        cy.wait(5000);
+        
+        cy.get('.success').should('exist'); // Ensure there is an item in the cart
+        cy.contains('Delete').first().click(); // Click on delete button for the first item
+        
+        cy.wait(3000);
+        cy.get('.success').should('not.exist'); // Verify the item is removed from the cart
+    });
 });

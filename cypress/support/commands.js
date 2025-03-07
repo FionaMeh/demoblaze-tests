@@ -23,3 +23,18 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('saveLocalStorage', () => {
+    Object.keys(localStorage).forEach((key) => {
+        Cypress.env(key, localStorage.getItem(key));
+    });
+});
+
+Cypress.Commands.add('restoreLocalStorage', () => {
+    Object.keys(Cypress.env()).forEach((key) => {
+        if (Cypress.env(key) !== null) {
+            localStorage.setItem(key, Cypress.env(key));
+        }
+    });
+});
+ 
