@@ -1,6 +1,6 @@
-This repo contains the tests written in Cypress for a basic todo list web application.
+This repo contains the tests written in Cypress for a demo e-commerce web application.
 
-The todo list application that is used is the sample link provided by Demoblaze : https://www.demoblaze.com/
+The e-commerce list application that is used is the sample link provided by Demoblaze : https://www.demoblaze.com/
 # Instructions for the project setup
 
 1. In order to be able to run the tests you should have:
