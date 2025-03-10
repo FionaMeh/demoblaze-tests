@@ -30,6 +30,6 @@ Test Coverage:
    2. logoutTest.spec.cy.js: Logout test case
    3. addItem.spec.cy.js; Test for adding an item to the Cart
    4. deleteItem.spec.cy.js: Test for deleting an item from the Cart
-   5. placeOrder.spec.ct.js: Test for placing an Order
+   5. placeOrder.spec.cy.js: Test for placing an Order
 
 After test running you should be able to see clear test results in the Cypress test runner.
